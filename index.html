@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	  <meta charset="UTF-8">
+	  <title>CrystalCollectors!</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+	  <link rel="shortcut icon" type="image/png" href="favicon.png">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 darkorange text-white">
+					<h1>CrystalCollector!</h1>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-4 yellowcream text-green">
+					<p>You will be given a random number at the start of the game.</p>
+					<p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+					<p>Each time when the game starts the value of each crystal will change.</p>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-2 forestgreen">
+					<h2 id="randomNumber"></h2>
+				</div>
+				<div class="col-md-1 skyblue">
+					<p id="winlose"></p>
+					<p>Wins: <span id="wins"></span></p>
+					<p>Losses: <span id="losses"></span></p>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-6">
+					<button id="ruby"></button>
+					<button id="sapphire"></button>
+					<button id="agate"></button>
+					<button id="emerald"></button>
+				</div>
+			</div>
+			<div class="row mt-2">
+				<div class="col-md-3 darkaqua text-white">
+					<p>Your total score is:</p>
+					<h2 id="guesses"></h2>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</html>

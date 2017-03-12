@@ -1,0 +1,56 @@
+body {
+	background-image: url(../images/asanoha-400px.png);
+}
+
+.darkorange {
+	background-color: darkorange;
+}
+
+.yellowcream {
+	background-color: #FFFFCC;
+}
+
+.forestgreen {
+	background-color: forestgreen;
+}
+
+.skyblue {
+	background-color: skyblue;
+}
+
+.darkaqua {
+	background-color: #1799B5;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-green {
+	color: green;
+}
+
+#ruby {
+	background: url(../images/ruby.png);
+	width: 100px;
+	height: 100px;
+}
+
+#sapphire {
+	background: url(../images/sapphire.png);
+	width: 100px;
+	height: 100px;
+}
+
+#agate {
+	background: url(../images/agate.png);
+	width: 100px;
+	height: 100px;
+}
+
+#emerald {
+	background: url(../images/emerald.png);
+	width: 100px;
+	height: 100px;
+}
+
