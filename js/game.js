@@ -15,19 +15,10 @@ $(function() {
 	// Generate the first game
 	generateGameVars();
 
-	// Update guesses and check to see if the game is won or lost when buttons are clicked
-	$('#ruby').click(function() {
-		checkGuess(gameVars.ruby);
-	});
-	$('#sapphire').click(function() {
-		checkGuess(gameVars.sapphire);
-	});
-	$('#agate').click(function() {
-		checkGuess(gameVars.agate);
-	});
-	$('#emerald').click(function() {
-		checkGuess(gameVars.emerald);
-	});
+	// When a button is clicked 
+	$('button').click(function() {
+		checkGuess($(this).attr('id'));
+	})
 });
 
 // Function Declaration 
@@ -46,8 +37,9 @@ function generateGameVars() {
 }
 
 function checkGuess(val) {
+
 	// Update the guess values
-	gameVars.guesses += val;
+	gameVars.guesses += gameVars[val];
 	$('#guesses').html(gameVars.guesses);
 
 	// Check to see if the game is won or lost
